@@ -11,12 +11,9 @@ var verbTwo = "<span class='change'>" + document.getElementById("VerbTwo").value
 
 var history = "<h1> DANCE STORY </h1>:"; 
 history += "This " + adjective + " day ";
-/*
-history += "Mark " + verb + " into/on ";
-
-+ roomOne + ".";
+history += "Mark " + verb + " into/on "+ roomOne + ".";
 history += "Mark's cousin " + adjectiveTwo + "everybody";
 history += "Elena" + verbTwo + "outside house";
-*/
+
 historyDiv.innerHTML = history;
 }
