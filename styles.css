@@ -3,8 +3,14 @@ font-family: 'Courier New', Courier, monospace;
 }
 #inputWords {
     margin: 50px auto;
-    width: 45%;
     text-align: center;
+    position: relative;
+    animation: inputmove 5s infinite;
+    animation-delay: 1.2s;
+}
+@keyframes inputmove {
+    from {left: -100px;}
+    to {left: 0px;}
 }
 ul {
     list-style-type: none;
@@ -26,7 +32,7 @@ border-color: #333;
     width: 200px;
 }
 #history {
-    margin-top: 12px;
+    margin: 0 auto;
     border: 1px solid blue;
     padding: 8px;
 }
