@@ -7,13 +7,19 @@ var adjective = "<span class='change'>" + document.getElementById("adjective").v
 var verb = "<span class='change'>" + document.getElementById("verb").value + "</span>";
 var roomOne = "<span class='change'>" + document.getElementById("roomOne").value + "</span>";
 var adjectiveTwo = "<span class='change'>" + document.getElementById("adjectiveTwo").value + "</span>";
+var arr = adjectiveTwo.split(" ");
+for (var i=0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+}
+var joinString = arr.join(" ");
+console.log(joinString);
 /*
 var verbTwo = "<span class='change'>" + document.getElementById("verbTwo").value + "</span>";
 */
 var history = "<h1> DANCE STORY </h1>"; 
 history += "This " + adjective + " day ";
 history += "Mark " + verb + " into/on "+ roomOne + ".";
-history += " " + adjectiveTwo + " woman" + " checked" + " calendar. "
+history += " " + joinString + " woman" + " checked" + " calendar. "
 
 historyDiv.innerHTML = history;
 }
