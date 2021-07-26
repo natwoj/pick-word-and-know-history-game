@@ -7,15 +7,13 @@ var adjective = "<span class='change'>" + document.getElementById("adjective").v
 var verb = "<span class='change'>" + document.getElementById("verb").value + "</span>";
 var roomOne = "<span class='change'>" + document.getElementById("roomOne").value + "</span>";
 var adjectiveTwo = "<span class='change'>" + document.getElementById("adjectiveTwo").value + "</span>";
-var uppCase = adjectiveTwo.toUpperCase();
 /*
 var verbTwo = "<span class='change'>" + document.getElementById("verbTwo").value + "</span>";
 */
 var history = "<h1> DANCE STORY </h1>"; 
 history += "This " + adjective + " day ";
 history += "Mark " + verb + " into/on "+ roomOne + ".";
-/*
-history += " " + uppCase + " woman" + verbTwo + "fast";
-*/
+history += " " + adjectiveTwo + " woman" + " checked" + " calendar. "
+
 historyDiv.innerHTML = history;
 }
