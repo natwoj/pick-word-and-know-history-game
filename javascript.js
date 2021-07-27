@@ -3,23 +3,22 @@ buttonChange.addEventListener('click', changeThis);
 
 function changeThis() {
 var historyDiv= document.getElementById("history");
-var adjective = "<span class='change'>" + document.getElementById("adjective").value + "</span>";
-var verb = "<span class='change'>" + document.getElementById("verb").value + "</span>";
-var roomOne = "<span class='change'>" + document.getElementById("roomOne").value + "</span>";
-var adjectiveTwo = "<span class='change'>" + document.getElementById("adjectiveTwo").value + "</span>";
-var arr = adjectiveTwo.split(" ");
-for (var i=0; i < arr.length; i++) {
-    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-}
-var joinString = arr.join(" ");
-console.log(joinString);
+var adjective = "<b><span class='change'>" + document.getElementById("adjective").value + "</span></b>";
+var verb = "<b><span class='change'>" + document.getElementById("verb").value + "</span></b>";
+var roomOne = "<b><span class='change'>" + document.getElementById("roomOne").value + "</span></b>";
+var adjectiveTwo = "<b><span class='change'>" + document.getElementById("adjectiveTwo").value + "</span><b>";
+var firstLetter = adjectiveTwo.slice(0);
+function bestUppercase(firstLetter) {
+    return firstLetter[0].toUpperCase() + firstLetter.slice(1).toLowerCase();
+};
+
 /*
 var verbTwo = "<span class='change'>" + document.getElementById("verbTwo").value + "</span>";
 */
 var history = "<h1> DANCE STORY </h1>"; 
 history += "This " + adjective + " day ";
 history += "Mark " + verb + " into/on "+ roomOne + ".";
-history += " " + joinString + " woman" + " checked" + " calendar. "
-
+history += " " + bestUppercase(firstLetter) + " woman" + " checked" + " calendar. "
 historyDiv.innerHTML = history;
 }
+
