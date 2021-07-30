@@ -7,18 +7,16 @@ var adjective = "<b><span class='change'>" + document.getElementById("adjective"
 var verb = "<b><span class='change'>" + document.getElementById("verb").value + "</span></b>";
 var roomOne = "<b><span class='change'>" + document.getElementById("roomOne").value + "</span></b>";
 var adjectiveTwo = "<b><span class='change'>" + document.getElementById("adjectiveTwo").value + "</span><b>";
-var firstLetter = adjectiveTwo.slice(0);
-function bestUppercase(firstLetter) {
-    return firstLetter[0].toUpperCase() + firstLetter.slice(1).toLowerCase();
+function bestUppercase(adjectiveTwo) {
+    return adjectiveTwo[24].toUpperCase() + adjectiveTwo.slice(25).toLowerCase();
 };
-
 /*
 var verbTwo = "<span class='change'>" + document.getElementById("verbTwo").value + "</span>";
 */
 var history = "<h1> DANCE STORY </h1>"; 
 history += "This " + adjective + " day ";
 history += "Mark " + verb + " into/on "+ roomOne + ".";
-history += " " + bestUppercase(firstLetter) + " woman" + " checked" + " calendar. "
+history += " " + bestUppercase(adjectiveTwo) + " woman" + " checked" + " calendar. "
 historyDiv.innerHTML = history;
-}
+} 
 
