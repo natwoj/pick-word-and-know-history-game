@@ -3,7 +3,7 @@ buttonChange.addEventListener('click', changeThis);
 
 function changeThis() {
 var historyDiv= document.getElementById("history");
-var adjective = "<b><span class='change'>" + document.getElementById("adjective").value + "</span></b>";
+var adjective = "<b>" + document.getElementById("adjective").value + "</b>";
 var verb = "<b><span class='change'>" + document.getElementById("verb").value + "</span></b>";
 var roomOne = "<b><span class='change'>" + document.getElementById("roomOne").value + "</span></b>";
 var adjectiveTwo = "<b><span class='change'>" + document.getElementById("adjectiveTwo").value + "</span><b>";

@@ -1,11 +1,15 @@
+
 body {
-font-family: 'Courier New', Courier, monospace;
+    font-family: 'Georama', sans-serif;
+    background-image: url("starry-night-1149815_1280pixabay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 #inputWords {
     margin: 50px auto;
     text-align: center;
-    position: relative;
-    animation: inputmove 5s infinite;
+    animation: inputmove 5s;
     animation-delay: 1.2s;
 }
 @keyframes inputmove {
@@ -19,20 +23,22 @@ ul {
 }
 li {
     line-height: 2em;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-top: 8px;;
-}
-input [type=text] {
-border-width: 0 0 1px 0;
-border-color: #333;
 }
 #buttonChange {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border-color: royalblue;
+    text-transform: uppercase;
 }
 #history {
-    margin: 0 auto;
-    border: 1px solid blue;
-    padding: 8px;
+    display: inline-block;
+    height: auto;
+    width: 400px;
+    justify-content: center;
+    padding: 15px;
 }
