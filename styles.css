@@ -4,7 +4,7 @@ body {
     background-image: url("starry-night-1149815_1280pixabay.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: black;
 }
 #inputWords {
     margin: 50px;
@@ -12,30 +12,69 @@ body {
 }
 .mobileview {
     display: inline-block;
-    background-color:slateblue;
+    background-color: white;
+    background-clip: ;
     padding: 8px;
     width: 270px;
     border-radius: 20px;
-    box-shadow: 30px 30px 50px black;
+    box-shadow: 30px 30px 50px rgb(26, 24, 24);
 }
+.title {
+    text-align: left;
+    padding-left: 25px;
+
+}
+p {
+    font-size: 0.9em;
+}
+.icons {
+    text-align: right;
+    padding: 8px;
+}
+.home {
+    text-align: left;
+    padding-left: 25px;
+}
+h5 {
+    display: inline-block;
+    font-weight: normal;
+}
+.justinputs {
+    border-radius: 30px;
+    padding: 8px 8px;
+    width: 80%;
+    display: inline-block;
+    -webkit-box-shadow: 0px 0px 70px -45px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 70px -45px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 70px -45px rgba(66, 68, 90, 1);
+}
+input[type="text"] {
+    border-radius: 30px;
+    width: 50%;
+}
+
 ul {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
 }
 li {
-    line-height: 2em;
+    line-height: 1.7em;
     text-transform: lowercase;
-    margin-top: 8px;;
+    margin-top: 2px;
+    color: black;
+    font-size: 0.9em;
 }
 #buttonChange {
     margin-top: 30px;
     margin-bottom: 10px;
-    width: 200px;
+    width: 100px;
     height: 30px;
-    border-radius: 30px;
-    border-color: royalblue;
+    border-radius: 10px;
     text-transform: uppercase;
+    border: none;
+    background: rgb(72,75,86);
+    background: linear-gradient(45deg, rgba(72,75,86,1) 0%, rgba(118,101,109,1) 100%);
 }
 #history {
     height: auto;
