@@ -10,13 +10,12 @@ var adjectiveTwo = "<b><span class='change'>" + document.getElementById("adjecti
 function bestUppercase(adjectiveTwo) {
     return adjectiveTwo[24].toUpperCase() + adjectiveTwo.slice(25).toLowerCase();
 };
-/*
 var verbTwo = "<span class='change'>" + document.getElementById("verbTwo").value + "</span>";
-*/
 var history = ""; 
 history += "Today will be " + adjective + " day. ";
 history += "You will " + verb + " at your "+ roomOne + ".";
-history += " " + bestUppercase(adjectiveTwo) + " you will meet someone new!"
+history += " " + bestUppercase(adjectiveTwo) + " you will meet someone new! "
+history += "So " + verbTwo + " your friend, go to " + roomOne + " and just chill."
 historyDiv.innerHTML = history;
 } 
 

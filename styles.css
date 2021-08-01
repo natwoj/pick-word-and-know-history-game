@@ -13,15 +13,17 @@ body {
 .mobileview {
     display: inline-block;
     background-color:  #fffcfc;
-    background-clip: ;
     padding: 8px;
-    width: 270px;
+    width: 280px;
     border-radius: 20px;
     box-shadow: 30px 30px 50px rgb(26, 24, 24);
 }
 .title {
     text-align: left;
     padding-left: 25px;
+}
+h2 {
+    margin-top: 10px;
 }
 p {
     font-size: 0.9em;
@@ -33,6 +35,7 @@ p {
 .home {
     text-align: left;
     padding-left: 25px;
+    height: 40px;
 }
 h5 {
     display: inline-block;
