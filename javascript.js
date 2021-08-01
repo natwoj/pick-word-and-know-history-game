@@ -13,10 +13,10 @@ function bestUppercase(adjectiveTwo) {
 /*
 var verbTwo = "<span class='change'>" + document.getElementById("verbTwo").value + "</span>";
 */
-var history = "<h1> DANCE STORY </h1>"; 
-history += "This " + adjective + " day ";
-history += "Mark " + verb + " into/on "+ roomOne + ".";
-history += " " + bestUppercase(adjectiveTwo) + " woman" + " checked" + " calendar. "
+var history = ""; 
+history += "Today will be " + adjective + " day. ";
+history += "You will " + verb + " at your "+ roomOne + ".";
+history += " " + bestUppercase(adjectiveTwo) + " you will meet someone new!"
 historyDiv.innerHTML = history;
 } 
 
