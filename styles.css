@@ -24,6 +24,10 @@ body {
 }
 h2 {
     margin-top: 10px;
+    display: inline-block;
+}
+i {
+    display: inline-block;
 }
 p {
     font-size: 0.9em;
